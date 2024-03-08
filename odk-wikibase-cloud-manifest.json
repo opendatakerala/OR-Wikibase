@@ -20,7 +20,7 @@
     "registration_page": "https://opendatakerala.wikibase.cloud/wiki/Special:OAuthConsumerRegistration/propose"
   },
   "reconciliation": {
-    "endpoint": "<base URL of KB reconciliation service>/${lang}/api"
+    "endpoint": "<base URL of ODK reconciliation service>/${lang}/api"
   },
   "entity_types": {
     "item": {
