@@ -12,8 +12,8 @@
     "max_edits_per_minute": 60,
     "tag": "openrefine-${version}",
     "properties": {
-      "instance_of": "P3",
-      "subclass_of": "P2"
+      "instance_of": "P2",
+      "subclass_of": "P11"
     }
   },
   "oauth": {
