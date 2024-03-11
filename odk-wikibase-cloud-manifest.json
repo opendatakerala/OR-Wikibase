@@ -1,32 +1,40 @@
 {
-  "version": "1.0",
-  "mediawiki": {
-    "name": "ODK OpenRefine WikibaseCloud",
-    "root": "https://opendatakerala.wikibase.cloud/wiki/",
-    "main_page": "https://opendatakerala.wikibase.cloud/wiki/Main_Page",
-    "api": "https://opendatakerala.wikibase.cloud/w/api.php"
-  },
-  "wikibase": {
-    "site_iri": "https://opendatakerala.wikibase.cloud/entity/",
-    "maxlag": 5,
-    "max_edits_per_minute": 60,
-    "tag": "openrefine-${version}",
-    "properties": {
-      "instance_of": "P2",
-      "subclass_of": "P11"
+    "version": "2.0",
+    "mediawiki": {
+        "name": "OpenDataKerala",
+        "root": "https://opendatakerala.wikibase.cloud/wiki/",
+        "main_page": "https://opendatakerala.wikibase.cloud/wiki/Main_Page",
+        "api": "https://opendatakerala.wikibase.cloud/w/api.php"
+    },
+    "wikibase": {
+        "site_iri": "https://opendatakerala.wikibase.cloud/entity/",
+        "maxlag": 5,
+        "max_edits_per_minute": 60,
+        "tag": "openrefine-${version}",
+        "properties": {
+            "instance_of": "P2",
+            "subclass_of": "P11"
+        }
+    },
+    "oauth": {
+        "registration_page": "https://opendatakerala.wikibase.cloud/wiki/Special:OAuthConsumerRegistration/propose"
+    },
+    "entity_types": {
+        "item": {
+            "site_iri": "https://opendatakerala.wikibase.cloud/entity/",
+            "reconciliation_endpoint": "http://localhost:8000/${lang}/api",
+            "mediawiki_api": "https://opendatakerala.wikibase.cloud/w/api.php"
+        },
+        "property": {
+            "site_iri": "https://opendatakerala.wikibase.cloud/entity/",
+            "mediawiki_api": "https://opendatakerala.wikibase.cloud/w/api.php"
+        },
+        "mediainfo": {
+            "site_iri": "https://opendatakerala.wikibase.cloud/entity/",
+            "reconciliation_endpoint": "http://localhost:8000/${lang}/api"
+        }
+    },
+    "editgroups": {
+        "url_schema": ""
     }
-  },
-  "oauth": {
-    "registration_page": "https://opendatakerala.wikibase.cloud/wiki/Special:OAuthConsumerRegistration/propose"
-  },
-  "reconciliation": {
-    "endpoint": "<base URL of ODK reconciliation service>/${lang}/api"
-  },
-  "entity_types": {
-    "item": {
-      "site_iri": "https://opendatakerala.wikibase.cloud/entity/",
-      "reconciliation_endpoint": "<base URL of ODK reconciliation service>/${lang}/api",
-      "mediawiki_api": "https://opendatakerala.wikibase.cloud/w/api.php"
-    }
-  }
 }
