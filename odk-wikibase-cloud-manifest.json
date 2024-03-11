@@ -33,8 +33,5 @@
             "site_iri": "https://opendatakerala.wikibase.cloud/entity/",
             "reconciliation_endpoint": "http://localhost:8000/${lang}/api"
         }
-    },
-    "editgroups": {
-        "url_schema": ""
     }
 }
